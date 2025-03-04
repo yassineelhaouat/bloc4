@@ -72,8 +72,11 @@ from utils import (
 ### Verifier que le réseau est correctement initialisé
 
 ```python
-    print(algorand.client.algod.block_info(0))
-    print(algorand.client.indexer.health())
+    algod_client = algorand.client.algod
+    indexer_client = algorand.client.indexer
+
+    print(algod_client.block_info(0))
+    print(indexer_client.health())
 ```
 
 ## Création des comptes
