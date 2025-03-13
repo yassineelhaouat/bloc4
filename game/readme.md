@@ -35,7 +35,6 @@ Complete the missing parts marked with **`TODO`**.
 ### ✅ Task 1: Implement `register()`
 
 ```mermaid
-graph TD
 sequenceDiagram
     participant User
     participant Client
@@ -55,6 +54,7 @@ sequenceDiagram
         Client->>AlgorandNode: Prepare new box entry (store user data)
         AlgorandNode-->>Client: Confirm box storage
     end
+    end
 
     rect rgba(200, 255, 200, 0.2)
     Note over Client, AlgorandNode: Funding and Registration
@@ -73,8 +73,7 @@ sequenceDiagram
 
     AlgorandNode-->>Client: Return registration result
     Client-->>User: Registration complete
-    end
-   end
+ end
 ```
 
 - **Find `box_key`**.
