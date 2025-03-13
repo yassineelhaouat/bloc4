@@ -64,8 +64,7 @@ def get_min_balance_required(ac, method) -> int | None:
     Simulates a transaction and extracts the minimum balance required if the transaction fails due to insufficient funds.
 
     :param ac: The application client instance.
-    :param box_call_args: The arguments for the application call.
-    :param box_call_params: The parameters for the application call.
+    :param method: The method for the application call.
     :return: The minimum balance required if an insufficient balance error occurs, otherwise None.
     """
     try:
